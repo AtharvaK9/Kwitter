@@ -58,8 +58,8 @@ function updateLike(message_id) {
     likes = document.getElementById(button_id).value;
     updated_likes = Number(likes) + 1;
     firebase.database().ref(room_name).child(message_id).update({
-        like: updated_likes
-    });
+        like: updated_likes 
+    }); 
 }
 
 
